@@ -9,7 +9,8 @@ import SwiftUI
 
 struct QuestBoardsView: View {
     var body: some View {
-        Text("This is for QuestBoard")
+        QuestsInfoViews()
+            .padding()
     }
 }
 
