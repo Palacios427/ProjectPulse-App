@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct ThingsViewApp: App {
+    
+    @State var profile: Profile = Profile.defaultValue
+
+    
     var body: some Scene {
         WindowGroup {
             ApplicationView()
+                .environment(profile)
         }
     }
 }

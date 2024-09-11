@@ -10,6 +10,7 @@ import SwiftUI
 struct ApplicationView: View {
     
     @State var selectedTab: Int = 2
+    @EnvironmentObject private var profile: Profile
     
     var body: some View {
         NavigationView {
@@ -69,4 +70,5 @@ struct ApplicationView: View {
 
 #Preview {
     ApplicationView()
+        .environment(Profile.defaultValue)
 }

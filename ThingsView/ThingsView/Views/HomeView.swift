@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @EnvironmentObject private var profile: Profile
+    
     var body: some View {
-        Text("This is for Home View")
+        VStack {
+            
+        }
     }
 }
 
 #Preview {
     HomeView()
+        .environment(Profile.defaultValue)
 }

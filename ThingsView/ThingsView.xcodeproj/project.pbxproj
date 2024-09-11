@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D81F97902C912130004A9193 /* ProfileInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F978F2C912130004A9193 /* ProfileInfoView.swift */; };
 		D81F97942C912205004A9193 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F97932C912205004A9193 /* ProfileModel.swift */; };
+		D84392E62C92140D005E03C8 /* ProfileEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84392E52C92140D005E03C8 /* ProfileEditView.swift */; };
 		FB275C512C90AF61007DBD5C /* ThingsViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB275C502C90AF61007DBD5C /* ThingsViewApp.swift */; };
 		FB275C532C90AF61007DBD5C /* QuestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB275C522C90AF61007DBD5C /* QuestsView.swift */; };
 		FB275C552C90AF62007DBD5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB275C542C90AF62007DBD5C /* Assets.xcassets */; };
@@ -24,8 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D81F978F2C912130004A9193 /* ProfileInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoView.swift; sourceTree = "<group>"; };
 		D81F97932C912205004A9193 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		D84392E52C92140D005E03C8 /* ProfileEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditView.swift; sourceTree = "<group>"; };
 		FB275C4D2C90AF61007DBD5C /* ThingsView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThingsView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB275C502C90AF61007DBD5C /* ThingsViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingsViewApp.swift; sourceTree = "<group>"; };
 		FB275C522C90AF61007DBD5C /* QuestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestsView.swift; sourceTree = "<group>"; };
@@ -55,8 +55,8 @@
 		D81F978E2C9120E2004A9193 /* InfoViews */ = {
 			isa = PBXGroup;
 			children = (
-				D81F978F2C912130004A9193 /* ProfileInfoView.swift */,
 				FBE13AA42C91F8B800D20908 /* QuestsInfoViews.swift */,
+				D84392E52C92140D005E03C8 /* ProfileEditView.swift */,
 			);
 			path = InfoViews;
 			sourceTree = "<group>";
@@ -201,7 +201,6 @@
 			files = (
 				FBE13AA82C91FB5B00D20908 /* SingleQuest.swift in Sources */,
 				D81F97942C912205004A9193 /* ProfileModel.swift in Sources */,
-				D81F97902C912130004A9193 /* ProfileInfoView.swift in Sources */,
 				FBE13AA52C91F8B800D20908 /* QuestsInfoViews.swift in Sources */,
 				FB275C612C90B132007DBD5C /* QuestBoardsView.swift in Sources */,
 				FB275C532C90AF61007DBD5C /* QuestsView.swift in Sources */,
@@ -210,6 +209,7 @@
 				FB275C512C90AF61007DBD5C /* ThingsViewApp.swift in Sources */,
 				FB275C632C90B1A0007DBD5C /* HomeView.swift in Sources */,
 				FB275C682C90B23F007DBD5C /* ProfileView.swift in Sources */,
+				D84392E62C92140D005E03C8 /* ProfileEditView.swift in Sources */,
 				FB275C5F2C90AF86007DBD5C /* ApplicationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
