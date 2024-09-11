@@ -29,8 +29,9 @@ struct ProfileInfoView: View {
                 .bold()
             
             // E-mail
-            Text(profile.email)
+            Link(profile.email, destination: URL(string: "mailto:\(profile.email)")!)
                 .font(.system(size: 25))
+                .foregroundColor(.blue)
             
             
             VStack {
