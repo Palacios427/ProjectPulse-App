@@ -11,7 +11,7 @@ struct StatsView: View {
     @State var statVM = StatViewModel()
     
     var body: some View {
-        HStack {
+        VStack {
             ScrollView {
                 ForEach(statVM.arrStats) { item in
                     

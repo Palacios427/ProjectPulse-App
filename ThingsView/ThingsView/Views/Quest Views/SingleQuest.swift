@@ -10,7 +10,7 @@ import SwiftUI
 struct SingleQuest: View {
     
     @State var thisQuest = Quest()
-    
+    @State var showAlert = false
     var body: some View {
         ZStack{
             Rectangle()
@@ -18,6 +18,11 @@ struct SingleQuest: View {
                 .foregroundColor(/*@START_MENU_TOKEN@*/Color(hue: 1.0, saturation: 0.007, brightness: 0.797)/*@END_MENU_TOKEN@*/)
                 .cornerRadius(30.0)
                 .shadow(radius: 5)
+                .onTapGesture {
+                    if(thisQuest.owner == "NONE"){
+                        showAlert = true
+                    }
+                }
             
             RoundedRectangle(cornerRadius: 10.0)
                 .frame(width: 300.0, height: 4)
@@ -83,6 +88,16 @@ struct SingleQuest: View {
                 
             }
             
+        }
+        .alert(isPresented: $showAlert){
+            Alert(
+                    title: Text("Take the Quest"),
+                    message: Text("Do you want to take this quest?"),
+                    primaryButton: .default(Text("Yes")) {
+                            thisQuest.owner = "ME"
+                        },
+                    secondaryButton: .cancel(Text("No"))
+                )
         }
     }
 }

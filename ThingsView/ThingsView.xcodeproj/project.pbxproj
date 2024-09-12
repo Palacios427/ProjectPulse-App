@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D81F97942C912205004A9193 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F97932C912205004A9193 /* ProfileModel.swift */; };
 		D84392E62C92140D005E03C8 /* ProfileEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84392E52C92140D005E03C8 /* ProfileEditView.swift */; };
+		D85BF1D92C93505B0077CE7C /* QuestsBoardsInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85BF1D82C93505B0077CE7C /* QuestsBoardsInfoView.swift */; };
 		FB275C512C90AF61007DBD5C /* ThingsViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB275C502C90AF61007DBD5C /* ThingsViewApp.swift */; };
 		FB275C532C90AF61007DBD5C /* QuestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB275C522C90AF61007DBD5C /* QuestsView.swift */; };
 		FB275C552C90AF62007DBD5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB275C542C90AF62007DBD5C /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		D81F97932C912205004A9193 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		D84392E52C92140D005E03C8 /* ProfileEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditView.swift; sourceTree = "<group>"; };
+		D85BF1D82C93505B0077CE7C /* QuestsBoardsInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestsBoardsInfoView.swift; sourceTree = "<group>"; };
 		FB275C4D2C90AF61007DBD5C /* ThingsView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThingsView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB275C502C90AF61007DBD5C /* ThingsViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingsViewApp.swift; sourceTree = "<group>"; };
 		FB275C522C90AF61007DBD5C /* QuestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestsView.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			children = (
 				FBE13AA72C91FB5B00D20908 /* SingleQuest.swift */,
 				FBE13AA42C91F8B800D20908 /* QuestsInfoViews.swift */,
+				D85BF1D82C93505B0077CE7C /* QuestsBoardsInfoView.swift */,
 			);
 			path = "Quest Views";
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				FB275C512C90AF61007DBD5C /* ThingsViewApp.swift in Sources */,
 				FB275C632C90B1A0007DBD5C /* HomeView.swift in Sources */,
 				FB275C682C90B23F007DBD5C /* ProfileView.swift in Sources */,
+				D85BF1D92C93505B0077CE7C /* QuestsBoardsInfoView.swift in Sources */,
 				D84392E62C92140D005E03C8 /* ProfileEditView.swift in Sources */,
 				FBAF5F382C9347B4004881F3 /* StatDetail.swift in Sources */,
 				FB275C5F2C90AF86007DBD5C /* ApplicationView.swift in Sources */,

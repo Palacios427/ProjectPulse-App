@@ -9,7 +9,7 @@ import SwiftUI
 
 struct QuestBoardsView: View {
     var body: some View {
-        QuestsInfoViews()
+        QuestsBoardsInfoView()
             .padding()
     }
 }

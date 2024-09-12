@@ -11,7 +11,9 @@ struct HomeView: View {
     
     @EnvironmentObject private var profile: Profile
     @State var QuestList: [Quest] = [Quest(), Quest(), Quest(), Quest()]
-
+    @State var statVM = StatViewModel()
+    
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -23,13 +25,13 @@ struct HomeView: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding()
                 }
-
+                
                 // Show quests slide
                 VStack(alignment: .leading) {
                     Text("Quests")
                         .font(.title)
                         .padding()
-
+                    
                     ScrollView(.horizontal) {
                         HStack {
                             ForEach(QuestList) { quest in
@@ -38,13 +40,26 @@ struct HomeView: View {
                             }
                         }
                     }
-
-                    Spacer()
+                                        
+                    Text("Stats")
+                        .font(.title)
+                        .padding()
                     
-                }
-            } // Information VStack
-        }
+                    ScrollView(.horizontal) {
+                        HStack {
+                            ForEach(statVM.arrStats) { item in
+                                StatDetail(stat: item)
+                            }
+                        }
+                        
+                    }// Scroll View for medals
+                    
+                }// VStack for information in home page
+                
+            }
+        } // Information VStack
     }
+    
 }
 
 #Preview {
