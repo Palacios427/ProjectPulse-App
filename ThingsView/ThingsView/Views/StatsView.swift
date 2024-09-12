@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct StatsView: View {
+    @State var statVM = StatViewModel()
+    
     var body: some View {
-        Text("This is For Stats")
+        HStack {
+            ScrollView {
+                ForEach(statVM.arrStats) { item in
+                    
+                    StatDetail(stat: item)
+
+                }
+            }
+                
+        }
     }
 }
 

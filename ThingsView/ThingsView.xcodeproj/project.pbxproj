@@ -18,6 +18,10 @@
 		FB275C632C90B1A0007DBD5C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB275C622C90B1A0007DBD5C /* HomeView.swift */; };
 		FB275C662C90B221007DBD5C /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB275C652C90B221007DBD5C /* StatsView.swift */; };
 		FB275C682C90B23F007DBD5C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB275C672C90B23F007DBD5C /* ProfileView.swift */; };
+		FBAF5F2F2C9346C4004881F3 /* StatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF5F2E2C9346C4004881F3 /* StatModel.swift */; };
+		FBAF5F352C93478B004881F3 /* statData.json in Resources */ = {isa = PBXBuildFile; fileRef = FBAF5F342C93478B004881F3 /* statData.json */; };
+		FBAF5F382C9347B4004881F3 /* StatDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF5F362C9347B4004881F3 /* StatDetail.swift */; };
+		FBAF5F392C9347B4004881F3 /* StatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF5F372C9347B4004881F3 /* StatViewModel.swift */; };
 		FBE13AA32C91F7C300D20908 /* QuestsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE13AA22C91F7C300D20908 /* QuestsModel.swift */; };
 		FBE13AA52C91F8B800D20908 /* QuestsInfoViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE13AA42C91F8B800D20908 /* QuestsInfoViews.swift */; };
 		FBE13AA82C91FB5B00D20908 /* SingleQuest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE13AA72C91FB5B00D20908 /* SingleQuest.swift */; };
@@ -36,6 +40,10 @@
 		FB275C622C90B1A0007DBD5C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FB275C652C90B221007DBD5C /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		FB275C672C90B23F007DBD5C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		FBAF5F2E2C9346C4004881F3 /* StatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatModel.swift; sourceTree = "<group>"; };
+		FBAF5F342C93478B004881F3 /* statData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = statData.json; sourceTree = "<group>"; };
+		FBAF5F362C9347B4004881F3 /* StatDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatDetail.swift; sourceTree = "<group>"; };
+		FBAF5F372C9347B4004881F3 /* StatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatViewModel.swift; sourceTree = "<group>"; };
 		FBE13AA22C91F7C300D20908 /* QuestsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestsModel.swift; sourceTree = "<group>"; };
 		FBE13AA42C91F8B800D20908 /* QuestsInfoViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestsInfoViews.swift; sourceTree = "<group>"; };
 		FBE13AA72C91FB5B00D20908 /* SingleQuest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleQuest.swift; sourceTree = "<group>"; };
@@ -66,6 +74,7 @@
 			children = (
 				D81F97932C912205004A9193 /* ProfileModel.swift */,
 				FBE13AA22C91F7C300D20908 /* QuestsModel.swift */,
+				FBAF5F2E2C9346C4004881F3 /* StatModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -123,10 +132,21 @@
 				FB275C602C90B132007DBD5C /* QuestBoardsView.swift */,
 				FB275C622C90B1A0007DBD5C /* HomeView.swift */,
 				FB275C652C90B221007DBD5C /* StatsView.swift */,
+				FBAF5F312C934709004881F3 /* Stats View */,
 				FB275C672C90B23F007DBD5C /* ProfileView.swift */,
 				D84392E72C92B884005E03C8 /* Profile Views */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FBAF5F312C934709004881F3 /* Stats View */ = {
+			isa = PBXGroup;
+			children = (
+				FBAF5F362C9347B4004881F3 /* StatDetail.swift */,
+				FBAF5F372C9347B4004881F3 /* StatViewModel.swift */,
+				FBAF5F342C93478B004881F3 /* statData.json */,
+			);
+			path = "Stats View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB275C582C90AF62007DBD5C /* Preview Assets.xcassets in Resources */,
+				FBAF5F352C93478B004881F3 /* statData.json in Resources */,
 				FB275C552C90AF62007DBD5C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,15 +222,18 @@
 			files = (
 				FBE13AA82C91FB5B00D20908 /* SingleQuest.swift in Sources */,
 				D81F97942C912205004A9193 /* ProfileModel.swift in Sources */,
+				FBAF5F392C9347B4004881F3 /* StatViewModel.swift in Sources */,
 				FBE13AA52C91F8B800D20908 /* QuestsInfoViews.swift in Sources */,
 				FB275C612C90B132007DBD5C /* QuestBoardsView.swift in Sources */,
 				FB275C532C90AF61007DBD5C /* QuestsView.swift in Sources */,
+				FBAF5F2F2C9346C4004881F3 /* StatModel.swift in Sources */,
 				FBE13AA32C91F7C300D20908 /* QuestsModel.swift in Sources */,
 				FB275C662C90B221007DBD5C /* StatsView.swift in Sources */,
 				FB275C512C90AF61007DBD5C /* ThingsViewApp.swift in Sources */,
 				FB275C632C90B1A0007DBD5C /* HomeView.swift in Sources */,
 				FB275C682C90B23F007DBD5C /* ProfileView.swift in Sources */,
 				D84392E62C92140D005E03C8 /* ProfileEditView.swift in Sources */,
+				FBAF5F382C9347B4004881F3 /* StatDetail.swift in Sources */,
 				FB275C5F2C90AF86007DBD5C /* ApplicationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

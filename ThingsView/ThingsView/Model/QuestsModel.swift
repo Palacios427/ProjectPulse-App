@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Quest : Identifiable {
+struct Quest : Decodable, Identifiable {
     var id = UUID()
     var name: String
     var level: Int
