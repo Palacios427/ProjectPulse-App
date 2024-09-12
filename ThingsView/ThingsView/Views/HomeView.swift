@@ -10,28 +10,44 @@ import SwiftUI
 struct HomeView: View {
     
     @EnvironmentObject private var profile: Profile
-    
+    @State var QuestList: [Quest] = [Quest(), Quest(), Quest(), Quest()]
+
     var body: some View {
         NavigationStack {
             VStack {
-                // Your main content here
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
+                // Top welcome message
+                HStack {
                     Text("Welcome \(profile.name)")
-                        .font(.title2)
+                        .font(.largeTitle)
                         .bold()
-                        .lineLimit(2)
-                        .multilineTextAlignment(.leading)
-                        .padding(.top)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding()
                 }
-            }
+
+                // Show quests slide
+                VStack(alignment: .leading) {
+                    Text("Quests")
+                        .font(.title)
+                        .padding()
+
+                    ScrollView(.horizontal) {
+                        HStack {
+                            ForEach(QuestList) { quest in
+                                SingleQuest(thisQuest: quest)
+                                    .padding([.leading, .bottom, .trailing])
+                            }
+                        }
+                    }
+
+                    Spacer()
+                    
+                }
+            } // Information VStack
         }
     }
 }
 
-
 #Preview {
     HomeView()
-        .environment(Profile.defaultValue)
+        .environmentObject(Profile.defaultValue)
 }

@@ -52,13 +52,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D81F978E2C9120E2004A9193 /* InfoViews */ = {
+		D81F978E2C9120E2004A9193 /* Quest Views */ = {
 			isa = PBXGroup;
 			children = (
+				FBE13AA72C91FB5B00D20908 /* SingleQuest.swift */,
 				FBE13AA42C91F8B800D20908 /* QuestsInfoViews.swift */,
-				D84392E52C92140D005E03C8 /* ProfileEditView.swift */,
 			);
-			path = InfoViews;
+			path = "Quest Views";
 			sourceTree = "<group>";
 		};
 		D81F97922C9121EC004A9193 /* Model */ = {
@@ -68,6 +68,14 @@
 				FBE13AA22C91F7C300D20908 /* QuestsModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D84392E72C92B884005E03C8 /* Profile Views */ = {
+			isa = PBXGroup;
+			children = (
+				D84392E52C92140D005E03C8 /* ProfileEditView.swift */,
+			);
+			path = "Profile Views";
 			sourceTree = "<group>";
 		};
 		FB275C442C90AF61007DBD5C = {
@@ -110,23 +118,15 @@
 		FB275C642C90B1FA007DBD5C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FBE13AA62C91FB4400D20908 /* SingleViews */,
 				FB275C522C90AF61007DBD5C /* QuestsView.swift */,
+				D81F978E2C9120E2004A9193 /* Quest Views */,
 				FB275C602C90B132007DBD5C /* QuestBoardsView.swift */,
 				FB275C622C90B1A0007DBD5C /* HomeView.swift */,
 				FB275C652C90B221007DBD5C /* StatsView.swift */,
 				FB275C672C90B23F007DBD5C /* ProfileView.swift */,
-				D81F978E2C9120E2004A9193 /* InfoViews */,
+				D84392E72C92B884005E03C8 /* Profile Views */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		FBE13AA62C91FB4400D20908 /* SingleViews */ = {
-			isa = PBXGroup;
-			children = (
-				FBE13AA72C91FB5B00D20908 /* SingleQuest.swift */,
-			);
-			path = SingleViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
