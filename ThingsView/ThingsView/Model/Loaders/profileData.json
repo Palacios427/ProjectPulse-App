@@ -1,0 +1,27 @@
+[
+    {
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com",
+      "teamName": "Development",
+      "teamRole": "Frontend Developer",
+      "userRole": "Admin",
+      "imageName": "alice_profile_image"
+    },
+    {
+      "name": "Bob Martinez",
+      "email": "bob.martinez@example.com",
+      "teamName": "Development",
+      "teamRole": "Backend Developer",
+      "userRole": "Member",
+      "imageName": "bob_profile_image"
+    },
+    {
+      "name": "Charlie Lee",
+      "email": "charlie.lee@example.com",
+      "teamName": "Design",
+      "teamRole": "UI/UX Designer",
+      "userRole": "Member",
+      "imageName": "charlie_profile_image"
+    }
+  ]
+  

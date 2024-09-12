@@ -10,11 +10,11 @@ import SwiftUI
 struct ApplicationView: View {
     
     @State var selectedTab: Int = 2
-    @EnvironmentObject private var profile: Profile
+    @EnvironmentObject var profileViewModel: ProfileViewModel
     
     var body: some View {
         NavigationView {
-            TabView(selection: $selectedTab){
+            TabView(selection: $selectedTab) {
                 
                 QuestsView()
                     .tabItem { Label("Quests", systemImage: "book") }
@@ -35,6 +35,7 @@ struct ApplicationView: View {
                 ProfileView()
                     .tabItem { Label("Profile", systemImage: "person.crop.circle") }
                     .tag(4)
+                    .environmentObject(profileViewModel) // Pass ProfileViewModel
             }
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
@@ -52,23 +53,17 @@ struct ApplicationView: View {
     
     func headerTitle() -> String {
         switch selectedTab {
-            case 0:
-                return "Quests"
-            case 1:
-                return "Quest Board"
-            case 2:
-                return "Home"
-            case 3:
-                return "Stats"
-            case 4:
-                return "Profile"
-            default:
-                return "ERROR"
+            case 0: return "Quests"
+            case 1: return "Quest Board"
+            case 2: return "Home"
+            case 3: return "Stats"
+            case 4: return "Profile"
+            default: return "ERROR"
         }
     }
 }
 
 #Preview {
     ApplicationView()
-        .environment(Profile.defaultValue)
+        .environmentObject(ProfileViewModel())
 }

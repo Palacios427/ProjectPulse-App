@@ -9,17 +9,16 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @EnvironmentObject private var profile: Profile
+    @EnvironmentObject var profileViewModel: ProfileViewModel
     @State var QuestList: [Quest] = [Quest(), Quest(), Quest(), Quest()]
     @State var statVM = StatViewModel()
-    
-    
+
     var body: some View {
         NavigationStack {
             VStack {
                 // Top welcome message
                 HStack {
-                    Text("Welcome \(profile.name)")
+                    Text("Welcome \(profileViewModel.arrProfile.first?.name ?? "Guest")")
                         .font(.largeTitle)
                         .bold()
                         .frame(maxWidth: .infinity, alignment: .leading)
@@ -51,18 +50,17 @@ struct HomeView: View {
                                 StatDetail(stat: item)
                             }
                         }
-                        
-                    }// Scroll View for medals
-                    
-                }// VStack for information in home page
+                    }
+                }
                 
-            }
-        } // Information VStack
+                Spacer()
+                
+            } // End of main VStack
+        }
     }
-    
 }
 
 #Preview {
     HomeView()
-        .environmentObject(Profile.defaultValue)
+        .environmentObject(ProfileViewModel())
 }

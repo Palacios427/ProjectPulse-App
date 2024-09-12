@@ -10,13 +10,12 @@ import SwiftUI
 @main
 struct ThingsViewApp: App {
     
-    @State var profile: Profile = Profile.defaultValue
+    @StateObject private var profileViewModel = ProfileViewModel()
 
-    
     var body: some Scene {
         WindowGroup {
             ApplicationView()
-                .environment(profile)
+                .environmentObject(profileViewModel) // Provide ProfileViewModel as an environment object
         }
     }
 }
