@@ -1,0 +1,83 @@
+[
+      {
+        "name": "Complete Frontend Design",
+        "level": 3,
+        "completion": 25.0,
+        "completed": false,
+        "owner": "Alice Johnson",
+        "desc": "Finalize the design for the user dashboard and integrate it with the backend."
+      },
+      {
+        "name": "Backend API Development",
+        "level": 5,
+        "completion": 75.0,
+        "completed": false,
+        "owner": "Bob Martinez",
+        "desc": "Develop and test the API for user authentication and data management."
+      },
+      {
+        "name": "UI/UX Feedback Implementation",
+        "level": 2,
+        "completion": 100.0,
+        "completed": true,
+        "owner": "Charlie Lee",
+        "desc": "Incorporate the feedback from user testing into the design prototype."
+      },
+      {
+        "name": "Code Review for Feature X",
+        "level": 4,
+        "completion": 50.0,
+        "completed": false,
+        "owner": "Alice Johnson",
+        "desc": "Review the code submitted by the team for the new feature before merging."
+      },
+      {
+        "name": "Finalize Project Documentation",
+        "level": 1,
+        "completion": 0.0,
+        "completed": false,
+        "owner": "NONE",
+        "desc": "Complete the documentation for the project, including API references and user guides."
+      },
+      {
+        "name": "Test Database Migration",
+        "level": 3,
+        "completion": 20.0,
+        "completed": false,
+        "owner": "NONE",
+        "desc": "Test the migration of data from the legacy system to the new database schema."
+      },
+      {
+        "name": "Set Up DevOps Pipeline",
+        "level": 4,
+        "completion": 40.0,
+        "completed": false,
+        "owner": "NONE",
+        "desc": "Establish the CI/CD pipeline for automated testing and deployment."
+      },
+      {
+        "name": "Create Unit Tests for Feature Y",
+        "level": 2,
+        "completion": 10.0,
+        "completed": false,
+        "owner": "NONE",
+        "desc": "Write unit tests to cover the new functionality in Feature Y."
+      },
+      {
+        "name": "Security Audit",
+        "level": 5,
+        "completion": 60.0,
+        "completed": false,
+        "owner": "NONE",
+        "desc": "Conduct a full security audit to identify potential vulnerabilities."
+      },
+      {
+        "name": "Prepare Sprint Review Presentation",
+        "level": 1,
+        "completion": 0.0,
+        "completed": false,
+        "owner": "NONE",
+        "desc": "Prepare the presentation for the upcoming sprint review meeting."
+    }
+]
+  

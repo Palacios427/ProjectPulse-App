@@ -9,8 +9,12 @@ import SwiftUI
 
 struct SingleQuest: View {
     
-    @State var thisQuest = Quest()
+    var thisQuest : Quest
     @State var showAlert = false
+    @ObservedObject var profile: Profile
+    @EnvironmentObject var profileViewModel: ProfileViewModel
+    @EnvironmentObject var questViewModel: QuestViewModel
+    
     var body: some View {
         ZStack{
             Rectangle()
@@ -94,14 +98,12 @@ struct SingleQuest: View {
                     title: Text("Take the Quest"),
                     message: Text("Do you want to take this quest?"),
                     primaryButton: .default(Text("Yes")) {
-                            thisQuest.owner = "ME"
+                        thisQuest.owner = profile.name
+                        questViewModel.save()
+
                         },
                     secondaryButton: .cancel(Text("No"))
                 )
         }
     }
-}
-
-#Preview {
-    SingleQuest()
 }

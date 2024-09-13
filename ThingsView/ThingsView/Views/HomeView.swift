@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     
     @EnvironmentObject var profileViewModel: ProfileViewModel
-    @State var QuestList: [Quest] = [Quest(), Quest(), Quest(), Quest()]
+    @State var QuestList = QuestViewModel()
     @State var statVM = StatViewModel()
 
     var body: some View {
@@ -33,8 +33,8 @@ struct HomeView: View {
                     
                     ScrollView(.horizontal) {
                         HStack {
-                            ForEach(QuestList) { quest in
-                                SingleQuest(thisQuest: quest)
+                            ForEach(QuestList.arrQuests) { item in
+                                SingleQuest(thisQuest: item, profile: profileViewModel.arrProfile.first!)
                                     .padding([.leading, .bottom, .trailing])
                             }
                         }

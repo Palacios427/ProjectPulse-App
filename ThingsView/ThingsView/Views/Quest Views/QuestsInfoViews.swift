@@ -8,21 +8,17 @@
 import SwiftUI
 
 struct QuestsInfoViews: View {
+    @EnvironmentObject var questVM: QuestViewModel
+    @State var profileVM = ProfileViewModel()
 
-    @State var QuestList: [Quest] = [Quest(), Quest(), Quest(), Quest()]
-    
     var body: some View {
-        ScrollView(.vertical){
-            VStack{
-                ForEach(QuestList){ quest in
-                    SingleQuest(thisQuest: quest)
+        ScrollView(.vertical) {
+            VStack {
+                ForEach(questVM.arrQuests.filter { $0.owner == profileVM.arrProfile.first?.name }) { quest in
+                    SingleQuest(thisQuest: quest, profile: profileVM.arrProfile.first!)
                         .padding([.leading, .bottom, .trailing])
                 }
             }
         }
     }
-}
-
-#Preview {
-    QuestsInfoViews()
 }
