@@ -37,7 +37,7 @@
 		D85BF1DB2C93556E0077CE7C /* statData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = statData.json; sourceTree = "<group>"; };
 		D85BF1DD2C9355820077CE7C /* profileData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = profileData.json; sourceTree = "<group>"; };
 		D85BF1DF2C9356810077CE7C /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
-		FB275C4D2C90AF61007DBD5C /* ThingsView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThingsView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB275C4D2C90AF61007DBD5C /* ProjectPulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB275C502C90AF61007DBD5C /* ThingsViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingsViewApp.swift; sourceTree = "<group>"; };
 		FB275C522C90AF61007DBD5C /* QuestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestsView.swift; sourceTree = "<group>"; };
 		FB275C542C90AF62007DBD5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 		FB275C4E2C90AF61007DBD5C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FB275C4D2C90AF61007DBD5C /* ThingsView.app */,
+				FB275C4D2C90AF61007DBD5C /* ProjectPulse.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,9 +177,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FB275C4C2C90AF61007DBD5C /* ThingsView */ = {
+		FB275C4C2C90AF61007DBD5C /* ProjectPulse */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB275C5B2C90AF62007DBD5C /* Build configuration list for PBXNativeTarget "ThingsView" */;
+			buildConfigurationList = FB275C5B2C90AF62007DBD5C /* Build configuration list for PBXNativeTarget "ProjectPulse" */;
 			buildPhases = (
 				FB275C492C90AF61007DBD5C /* Sources */,
 				FB275C4A2C90AF61007DBD5C /* Frameworks */,
@@ -189,9 +189,9 @@
 			);
 			dependencies = (
 			);
-			name = ThingsView;
+			name = ProjectPulse;
 			productName = ThingsView;
-			productReference = FB275C4D2C90AF61007DBD5C /* ThingsView.app */;
+			productReference = FB275C4D2C90AF61007DBD5C /* ProjectPulse.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -209,7 +209,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FB275C482C90AF61007DBD5C /* Build configuration list for PBXProject "ThingsView" */;
+			buildConfigurationList = FB275C482C90AF61007DBD5C /* Build configuration list for PBXProject "ProjectPulse" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -222,7 +222,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FB275C4C2C90AF61007DBD5C /* ThingsView */,
+				FB275C4C2C90AF61007DBD5C /* ProjectPulse */,
 			);
 		};
 /* End PBXProject section */
@@ -447,7 +447,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FB275C482C90AF61007DBD5C /* Build configuration list for PBXProject "ThingsView" */ = {
+		FB275C482C90AF61007DBD5C /* Build configuration list for PBXProject "ProjectPulse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB275C592C90AF62007DBD5C /* Debug */,
@@ -456,7 +456,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB275C5B2C90AF62007DBD5C /* Build configuration list for PBXNativeTarget "ThingsView" */ = {
+		FB275C5B2C90AF62007DBD5C /* Build configuration list for PBXNativeTarget "ProjectPulse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB275C5C2C90AF62007DBD5C /* Debug */,
